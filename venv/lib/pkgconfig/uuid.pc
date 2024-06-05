@@ -1,0 +1,11 @@
+prefix=/workspaces/project_testing/venv
+exec_prefix=/workspaces/project_testing/venv
+libdir=/workspaces/project_testing/venv/lib
+includedir=/workspaces/project_testing/venv/include
+
+Name: uuid
+Description: Universally unique id library
+Version: 2.32.1
+Requires:
+Cflags: -I${includedir}/uuid
+Libs: -L${libdir} -luuid

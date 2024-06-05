@@ -1,0 +1,12 @@
+requests
+beautifulsoup4 
+fake_useragent
+reportlab
+streamlit
+google-generativeai
+python-dotenv
+langchain
+PyPDF2
+chromadb
+faiss-cpu
+langchain_google_genai
