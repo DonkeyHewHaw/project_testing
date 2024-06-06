@@ -172,8 +172,10 @@ def main():
                 get_vector_store(text_chunks)
                 st.success("Done")
 
-            current_directory = os.getcwd()
-            file_path = os.path.join(current_directory, f'reviews.txt')
+        current_directory = os.getcwd()
+        file_path = os.path.join(current_directory, f'reviews.txt')
+
+        if os.path.exists(file_path):
             with open(file_path, 'r', encoding='utf-8') as file:
                 if st.download_button(label="Download reviews as .txt file",
                                     data=file,
